@@ -103,9 +103,21 @@ export default function EventsPage() {
   };
 
   const rsvpActive = {
-    GOING: { background: '#22c55e', borderColor: '#22c55e', color: '#fff' },
-    INTERESTED: { background: '#3b82f6', borderColor: '#3b82f6', color: '#fff' },
-    CANCELED: { background: '#9ca3af', borderColor: '#9ca3af', color: '#111' },
+    GOING: { 
+      background: '#22c55e', 
+      border: '1px solid #22c55e', 
+      color: '#fff' 
+    },
+    INTERESTED: { 
+      background: '#3b82f6', 
+      border: '1px solid #3b82f6', 
+      color: '#fff' 
+    },
+    CANCELED: { 
+      background: '#9ca3af', 
+      border: '1px solid #9ca3af', 
+      color: '#111' 
+    },
   };
 
   return (
@@ -174,7 +186,11 @@ export default function EventsPage() {
               {me?.id === ev.organizer?.id && (
                 <button
                   onClick={() => destroyEvent(ev.id)}
-                  style={{ marginLeft: 'auto', color: '#b00', borderColor: '#b00' }}
+                  style={{ 
+                    marginLeft: 'auto', 
+                    color: '#b00', 
+                    border: '1px solid #b00' // Changed from borderColor to border
+                  }}
                   title="Delete this event"
                 >
                   Delete
