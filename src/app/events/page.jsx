@@ -189,7 +189,7 @@ export default function EventsPage() {
                   style={{ 
                     marginLeft: 'auto', 
                     color: '#b00', 
-                    border: '1px solid #b00' // Changed from borderColor to border
+                    border: '1px solid #b00' 
                   }}
                   title="Delete this event"
                 >
